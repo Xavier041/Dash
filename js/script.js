@@ -17,22 +17,28 @@ addEventListener('DOMContentLoaded', function () {
             footBtn.classList.remove('show')
         }
     }
+    
     document.getElementById('plusBtn').addEventListener('click', function () {
         document.getElementById('modalwin1').classList.toggle('openModalWin')
         document.getElementById('CompareSection').classList.toggle('blur')
+        document.getElementById('modalWinContent1').classList.add('startAnimation')
     })
     document.getElementById('closeModal').addEventListener('click', function () {
         document.getElementById('modalwin1').classList.remove('openModalWin')
         document.getElementById('CompareSection').classList.remove('blur')
+        document.getElementById('modalWinContent1').classList.remove('startAnimation')
     })
 
     document.getElementById('plusBtn2').addEventListener('click', function () {
         document.getElementById('modalwin2').classList.toggle('openModalWin2')
         document.getElementById('CompareSection').classList.toggle('blur')
+        document.getElementById('modalWinContent2').classList.add('startAnimation')
+            
     })
     document.getElementById('closeModal2').addEventListener('click', function () {
         document.getElementById('modalwin2').classList.remove('openModalWin2')
         document.getElementById('CompareSection').classList.remove('blur')
+        document.getElementById('modalWinContent2').classList.remove('startAnimation')
     })
 
 })
