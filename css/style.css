@@ -1,4 +1,5 @@
-@import "//fonts.fontstorage.com/import/zantroke.css";
+@import "//fonts.fontstorage.com/import/dayssans.css";
+@import "//fonts.fontstorage.com/import/berniershade.css";
 @import "//fonts.fontstorage.com/import/intro.css";
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&display=swap');
 @import "//fonts.fontstorage.com/import/gagalin.css";
@@ -160,6 +161,11 @@ info.hoverBurg {
     padding: 10px;
 }
 
+.main-btn img{
+    width: 140px;
+    height: 50px;
+}
+
 .main-download {
     border-radius: 10px;
 
@@ -301,29 +307,54 @@ info.hoverBurg {
     z-index: 99;
     height: 400px;
     width: 900px;
-    background-color: #696969;
+    background-color:  rgba(17, 25, 33);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow-y: auto;
+    overflow: hidden;
     visibility: hidden;
     opacity: 0;
     transition: opacity .4s, visibility .4s;
 }
 
-.modalwin h3,
-.modalwin2 h3 {
-    font-family: 'Zantroke';
-    color: black;
+.modal-win-content {
+  font-family: 'Bernier Shade';
+    color: white;
     font-weight: 100;
     text-align: center;
     font-size: 30px;
+    text-shadow: 1px 1px 1px blue;
+  
+ 
+      
 }
+.modal-win-content.startAnimation{
+      animation: modalwinAnimationSize 4s ease;
+}
+@keyframes modalwinAnimationSize{
+    0%{
+        color:   rgba(255, 69, 0, 0.8);
+        font-size: 235px;
+       
+    }
+    100%{
+         color: white;
+        font-size:  30px;
+        
+    }
+
+    
+}
+
+
+
 
 .modalwin.openModalWin {
     visibility: visible;
     opacity: 1;
+    
+      
 
 }
 
@@ -341,10 +372,10 @@ info.hoverBurg {
     top: 0;
     right: 0;
     font-weight: 900;
-    border-radius: 90%;
+    border-radius: 25%;
     width: 40px;
     height: 40px;
-    background-color: black;
+    background-color: #0b0f3b;
     color: white;
 }
 
@@ -409,6 +440,10 @@ info.hoverBurg {
 .pleasure-btn {
     margin-top: 35px;
 }
+.pleasure-btn img{
+    width: 140px;
+    height: 50px;
+}
 
 .footer-top {
     background-color: #1f1f1f;
@@ -429,6 +464,7 @@ info.hoverBurg {
 .footer-discussion a,
 .footer-social a {
     text-decoration: none;
+    
 }
 
 .img-discussion {
@@ -518,32 +554,43 @@ info.hoverBurg {
 .btn-footer:hover {
     background-color: aliceblue;
 }
+/* update*/
+@media (height: 600px){
+      .footer-social,
+    .footer-discussion {
+        padding: 30px;
+        text-align: center;
+        font-size: 20px;
+}
+   .small-join,
+    .small-social {
+        text-align: center;
+    }
+     .pipe::before {
 
+        content: "";
+
+        display: block;
+        width: 100%;
+        height: 0.5px;
+        text-align: center;
+        background-color: aliceblue;
+        opacity: 0.2;
+    }
+}/* update end*/
 @media(min-width:992px) and (max-width:1290px) {
     .contain {
         padding: 35px 75px;
         margin: 0;
 
     }
-
-    .footer-down h5 {
-        transform: translateX(0px);
-        margin: 0 auto;
-    }
+    
+    
 }
 
 @media(max-width:992px) {
-    .header {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        z-index: 999;
-        width: 100%;
-        background-color: white;
-        height: 50px;
-
-    }
-
+   
+    
     .header-burger {
         display: block;
         transform: translateY(-10px);
@@ -600,7 +647,7 @@ info.hoverBurg {
     }
 
     .main-aplication {
-        margin: 140px 20px 20px 20px;
+        margin: 30px 20px 20px 20px;
         text-align: left;
 
     }
@@ -628,25 +675,27 @@ info.hoverBurg {
     .features {
         padding: 10px;
     }
-
+    /*update*/
     .compare {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+       padding: 10px;
     }
 
     .compare h2,
     .compare h1 {
-        font-size: 15px;
+        font-size: 18px;
         text-align: center;
+    font-family: 'Days Sans';
+        font-weight: 900;
     }
 
     .compare-img {
         padding: 10px;
-        width: 200px;
-        height: 100px;
-        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0px;
     }
 
     .message-with-modal {
@@ -656,23 +705,26 @@ info.hoverBurg {
 
     .compare-text-safety,
     .compare-text-fast {
-        margin: 0 auto;
+      
         display: inline-block;
         padding: 15px;
-        width: 100px;
-        height: 100px;
+        width: 49%;
+        height: 70%;
         flex-direction: row;
         text-align: center;
     }
-
+/*update end*/
     .plus-icon {
         width: 27px;
         height: 25px;
     }
 
     .compare h3 {
-        font-size: 10px;
-        text-align: center;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
     }
 
     .global-money {
@@ -688,21 +740,33 @@ info.hoverBurg {
     }
 
     .container-pleasure {
-        padding: 30px;
-        height: auto;
+      padding: 10%;
+        margin: 5%;
+        height: 450px;
+        width: 2000px;
+        border-radius:7%;
+        
     }
+   
+
 
     .pleasure-btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 5px;
+        transform: translateY(-40px);
+       
+    }
+    .pleasure-btn img{
+        margin: 0 auto;
+        display: block;
+
     }
 
     .footer-social,
     .footer-discussion {
         margin-bottom: 30px;
         margin-top: 30px;
+        padding: 0px;
+        width: 100%;
+   
 
     }
 
@@ -727,11 +791,7 @@ info.hoverBurg {
         opacity: 0.2;
     }
 
-    .footer-discussion,
-    .footer-social {
-        padding: 0px;
-        width: 100%;
-    }
+   
 
     .footer-down {
         padding: 25px;
@@ -748,9 +808,12 @@ info.hoverBurg {
     .modalwin,
     .modalwin2 {
         height: 250px;
-        width: 280px;
+        width: 100%;
         padding: 20px;
     }
+    .modal-win-content.startAnimation{
+      animation: modalwinAnimationSize 1s ease-out;
+}
 
     .modalwin h3,
     .modalwin2 h3 {
