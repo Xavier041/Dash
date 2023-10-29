@@ -257,6 +257,7 @@ info.hoverBurg {
     position: relative;
     border: 1px solid transparent;
     text-aling: center;
+    margin-top: 10px;
     
 
 
@@ -273,7 +274,7 @@ info.hoverBurg {
 .compare-text-safety {
     background-color: rgba(0, 141, 228);
     color: aliceblue;
-    margin-top: 50px;
+    margin-top: 65px;
     border-radius: 10%;
     padding: 41px;
     width: 300px;
