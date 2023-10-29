@@ -835,9 +835,7 @@ info.hoverBurg {
         width: 100%;
         padding: 20px;
     }
-    .modal-win-content.startAnimation{
-      animation: modalwinAnimationSize 1s steps(10,start);
-}
+  
 
     .modalwin h3,
     .modalwin2 h3 {
