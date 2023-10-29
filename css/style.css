@@ -326,52 +326,26 @@ info.hoverBurg {
   font-size: 30px;
   text-shadow: 1px 1px 1px blue;
 }
-.modal-win-content.startAnimation {
-  animation: modalwinAnimationSize 4s linear;
+.modal-win-content.startAnimation{
+      animation: modalwinAnimationSize 10s linear;
 }
-@keyframes modalwinAnimationSize {
-  0% {
-    color: rgba(255, 69, 0, 0.8);
-    font-size: 235px;
-  }
-  10% {
-    font-size: 215px;
-    color: rgba(255, 69, 0, 0.8);
-  }
-  20% {
-    font-size: 195px;
-    color: rgba(255, 69, 0, 0.8);
-  }
-  30% {
-    font-size: 175px;
-    color: rgba(255, 69, 0, 0.8);
-  }
-  40% {
-    font-size: 155px;
-    color: rgba(255, 69, 0, 0.8);
-  }
-  50% {
-    font-size: 135px;
-    color: rgba(255, 69, 0, 0.8);
-  }
-  60% {
-    font-size: 115px;
-  }
-  70% {
-    font-size: 95px;
-  }
-  80% {
-    font-size: 75px;
-  }
-  90% {
-    font-size: 55px;
-  }
-  100% {
-    color: white;
-    font-size: 30px;
-  }
-}
+@keyframes modalwinAnimationSize{
+    0%{
+       color: rgba(  17, 25, 33);
+        background-clip: text;
+         font-size: 30px;
+         text-shadow:none;
+       
+    }
+   
+    100%{
+            color: rgba(255,255,255, 1);
+        background-clip: text;
+        
+    }
 
+    
+}
 
 
 .modalwin.openModalWin {
@@ -836,7 +810,26 @@ info.hoverBurg {
         padding: 20px;
     }
   
+ @keyframes modalwinAnimationSize{
+    0%{
+       color: rgba(  17, 25, 33);
+        background-clip: text;
+         font-size: 15px;
+         text-shadow:none;
+       
+    }
+   
+    100%{
+            color: rgba(255,255,255, 1);
+        background-clip: text;
+        
+    }
 
+    
+}
+    .modal-win-content.startAnimation{
+      animation: modalwinAnimationSize 10s linear;
+}
     .modalwin h3,
     .modalwin2 h3 {
         font-size: 15px;
