@@ -256,6 +256,7 @@ info.hoverBurg {
     height: 190px;
     position: relative;
     border: 1px solid transparent;
+    text-aling: center;
 
 
 }
@@ -278,6 +279,7 @@ info.hoverBurg {
     height: 190px;
     position: relative;
     border: 1px solid transparent;
+    text-align:center;
 
 }
 
